@@ -1,0 +1,79 @@
+/* ----------------------------
+    Colors
+---------------------------- */
+$grey-medium: #c0c2c3;
+$grey-silver: #e4e4e4;
+$lightpink: #FFB6C1;
+$wheat: #F5DEB3;
+$white: #ffffff;
+$grey-sideBar: #e6e4e4;
+
+/* ----------------------------
+    Border
+---------------------------- */
+
+$border: 1px solid $grey-silver;
+
+/* ----------------------------
+    Spacing
+---------------------------- */
+$spacing-XXL: 68px;
+$spacing-XML: 60px;
+$spacing-XM: 48px;
+$spacing-XL: 42px;
+$spacing-MXL: 32px;
+$spacing-SXL: 30px;
+$spacing-L: 24px;
+$spacing-M: 16px;
+$spacing-S: 12px;
+$spacing-XLXS: 10px;
+$spacing-LXS: 8px;
+$spacing-XS: 6px;
+$spacing-XXS: 4px;
+
+/* ----------------------------
+    Fixed size
+---------------------------- */
+$navbar-height: 60px;
+$grid-generic-max-width: 1280px;
+
+/* ----------------------------
+    Fonts
+---------------------------- */
+
+%gv-mix-title1 {
+  font-size: 25px;
+  font-family: AvenirNext-demiBold;
+  line-height: 26px;
+}
+
+%gv-mix-body {
+  font-family: AvenirNext-regular;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* ----------------------------
+    Responsive
+---------------------------- */
+$small-desktop: 'only screen and (max-width : 1024px)';
+
+/* ----------------------------
+    Shadow
+---------------------------- */
+$box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+
+/* ----------------------------
+    Breakpoint
+---------------------------- */
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobileMini {
+  @media (max-width: 350px) {
+    @content;
+  }
+}

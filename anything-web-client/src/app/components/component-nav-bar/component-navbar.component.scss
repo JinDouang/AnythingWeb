@@ -1,0 +1,38 @@
+@import '../../../assets/mixins';
+
+$navbar-height: 60px;
+
+.comp-navbar {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+  border-bottom: $border;
+  &-menu {
+    height: $navbar-height;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    &-title{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &-logo {
+        height: 100%;
+      }
+      &-name {
+        padding: 0 $spacing-XS;
+      }
+    }
+    &-content {
+      display: flex;
+      justify-content: flex-end;
+      flex: 1;
+      padding-right: $spacing-M;
+      &-searchBar {
+        flex-grow: 1;
+        padding: $spacing-S 0 $spacing-S $spacing-S;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import '../../../assets/mixins';
+
+.comp-sideBar {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $grey-sideBar;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: $spacing-XML;
+  &.is-active {
+    width: 250px;
+  }
+  &-close {
+    text-align: end;
+    font-size: 40px;
+    padding: 0 $spacing-M;
+  }
+  &-content {
+    text-align: center;
+    padding: $spacing-M;
+  }
+}

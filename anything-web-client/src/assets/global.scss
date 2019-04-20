@@ -1,0 +1,65 @@
+@import 'mixins';
+
+body {
+  min-width: 768px;
+}
+
+/* ----------------------------
+    Fonts
+---------------------------- */
+.glob-font-title-1 {
+  @extend %gv-mix-title1;
+}
+
+/* ----------------------------
+    Form
+---------------------------- */
+form {
+  display: flex;
+  flex-direction: column;
+  label {
+    flex: 1;
+  }
+  input,
+  textarea {
+    @extend %gv-mix-body;
+    flex: 1;
+    padding: $spacing-XLXS;
+    border: 1px solid $grey-silver;
+    outline: none;
+  }
+}
+
+/* ----------------------------
+    Grids
+---------------------------- */
+
+.glob-grid {
+  display: grid;
+  width: 100%;
+  height: min-content;
+}
+
+.glob-layout {
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas:
+    'global-navbar'
+    'global-content';
+  grid-template-rows:
+    minmax(60px, min-content)
+    1fr;
+
+  &-navbar {
+    grid-area: global-navbar;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    background: $white;
+  }
+
+  &-content {
+    grid-area: global-content;
+  }
+}

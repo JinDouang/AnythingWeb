@@ -1,0 +1,23 @@
+{
+  "name": "AnythingWeb",
+  "version": "1.0.0",
+  "description": "API server used for web client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "server"
+  ],
+  "author": "Jin douang",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "magicseaweed": "^2.0.0"
+  }
+}
