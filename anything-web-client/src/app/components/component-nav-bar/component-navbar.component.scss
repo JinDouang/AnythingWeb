@@ -33,6 +33,13 @@ $navbar-height: 60px;
         flex-grow: 1;
         padding: $spacing-S 0 $spacing-S $spacing-S;
       }
+      &-menuButton {
+        flex-grow: 0;
+        align-items: center;
+        justify-content: flex-end;
+        display: flex;
+        padding-left: $spacing-M;
+      }
     }
   }
 }

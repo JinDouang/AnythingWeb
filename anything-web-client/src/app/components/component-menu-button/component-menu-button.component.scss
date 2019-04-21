@@ -1,0 +1,8 @@
+@import '../../../assets/mixins';
+
+.comp-menuButton {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  padding-right: $spacing-M;
+}

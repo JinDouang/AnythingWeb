@@ -5,6 +5,7 @@ import {RouterModule} from '@angular/router';
 import {ComponentSearchBarModule} from '../component-search-bar/component-search-bar.module';
 import {AuthenticationService} from '../../services/authentication/authentication.service';
 import {HttpClientModule} from '@angular/common/http';
+import {ComponentMenuButtonModule} from '../component-menu-button/component-menu-button.module';
 
 export const MODULE_PROVIDERS: Provider[] = [
   AuthenticationService
@@ -16,7 +17,8 @@ export const MODULE_IMPORTS: Array<Type<any> | ModuleWithProviders | any[]> = [
   CommonModule,
   RouterModule,
   HttpClientModule,
-  ComponentSearchBarModule
+  ComponentSearchBarModule,
+  ComponentMenuButtonModule,
 ];
 export const MODULE_EXPORTS: Array<Type<any> | any[]> = [ComponentNavbarComponent];
 
