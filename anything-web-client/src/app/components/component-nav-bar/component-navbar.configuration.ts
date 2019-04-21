@@ -4,8 +4,8 @@ import {ComponentNavbarComponent} from './component-navbar.component';
 import {RouterModule} from '@angular/router';
 import {ComponentSearchBarModule} from '../component-search-bar/component-search-bar.module';
 import {AuthenticationService} from '../../services/authentication/authentication.service';
-import {HttpClientModule} from '@angular/common/http';
 import {ComponentMenuButtonModule} from '../component-menu-button/component-menu-button.module';
+import {PipesModule} from '../../core/pipes/pipes.module';
 
 export const MODULE_PROVIDERS: Provider[] = [
   AuthenticationService
@@ -16,9 +16,9 @@ export const MODULE_DECLARATIONS: Array<Type<any> | any[]> = [ComponentNavbarCom
 export const MODULE_IMPORTS: Array<Type<any> | ModuleWithProviders | any[]> = [
   CommonModule,
   RouterModule,
-  HttpClientModule,
   ComponentSearchBarModule,
   ComponentMenuButtonModule,
+  PipesModule
 ];
 export const MODULE_EXPORTS: Array<Type<any> | any[]> = [ComponentNavbarComponent];
 
