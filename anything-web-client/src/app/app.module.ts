@@ -7,6 +7,7 @@ import {ComponentNavbarModule} from './components/component-nav-bar/component-na
 import {AuthenticationService} from './services/authentication/authentication.service';
 import {HttpClientModule} from '@angular/common/http';
 import {TranslateService} from './services/Translate/translate.service';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import {TranslateService} from './services/Translate/translate.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     ComponentNavbarModule,
   ],

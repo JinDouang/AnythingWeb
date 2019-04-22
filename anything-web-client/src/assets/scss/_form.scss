@@ -1,0 +1,17 @@
+@import 'mixins';
+
+form {
+  display: flex;
+  flex-direction: column;
+  label {
+    flex: 1;
+  }
+  input,
+  textarea {
+    @extend %gv-mix-body;
+    flex: 1;
+    padding: $spacing-XLXS;
+    border: 1px solid $grey-silver;
+    outline: none;
+  }
+}

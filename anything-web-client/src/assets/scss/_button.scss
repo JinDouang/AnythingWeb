@@ -1,9 +1,11 @@
 @import 'mixins';
 
 $height-button: 36px;
+$border-radius: 20px;
 
+/* Custom button design */
 button {
-  border-radius: 20px;
+  border-radius: $border-radius;
   align-self: stretch;
   text-align: center;
   justify-content: center;
@@ -45,4 +47,11 @@ button {
       cursor: not-allowed;
     }
   }
+}
+
+
+/* Angular material design button */
+
+button.mat-raised-button {
+  border-radius: $border-radius;
 }

@@ -1,0 +1,42 @@
+@import 'mixins';
+
+.glob-font-title-1 {
+  @extend %gv-mix-title1;
+}
+
+.glob-font-modal-title {
+  @extend %gv-mix-modal-title;
+}
+.glob-font-title-2 {
+  @extend %gv-mix-title2;
+}
+.glob-font-title-3 {
+  @extend %gv-mix-title3;
+}
+.glob-font-subtitle {
+  @extend %gv-mix-subtitle;
+}
+.glob-font-subtitle-bold {
+  @extend %gv-mix-subtitleBold;
+}
+.glob-font-body {
+  @extend %gv-mix-body;
+}
+.glob-font-body-bold {
+  @extend %gv-mix-bodyBold;
+}
+.glob-font-small {
+  @extend %gv-mix-small;
+}
+.glob-font-smallBold {
+  @extend %gv-mix-small-bold;
+}
+.glob-font-xs {
+  @extend %gv-mix-xs;
+}
+.glob-font-xsBold {
+  @extend %gv-mix-xsBold;
+}
+.glob-font-button {
+  @extend %gv-mix-button;
+}

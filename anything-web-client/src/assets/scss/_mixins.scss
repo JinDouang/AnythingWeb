@@ -45,9 +45,39 @@ $grid-generic-max-width: 1280px;
 ---------------------------- */
 
 %gv-mix-title1 {
-  font-size: 25px;
+  font-size: 22px;
   font-family: AvenirNext-demiBold;
   line-height: 26px;
+}
+
+%gv-mix-modal-title {
+  font-size: 20px;
+  font-family: AvenirNext-demiBold;
+  line-height: 26px;
+}
+
+%gv-mix-title2 {
+  font-family: AvenirNext-regular;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+%gv-mix-title3 {
+  font-size: 18px;
+  font-family: AvenirNext-demiBold;
+  line-height: 22px;
+}
+
+%gv-mix-subtitle {
+  font-family: AvenirNext-regular;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+%gv-mix-subtitleBold {
+  font-size: 16px;
+  font-family: AvenirNext-demiBold;
+  line-height: 20px;
 }
 
 %gv-mix-body {
@@ -56,10 +86,42 @@ $grid-generic-max-width: 1280px;
   line-height: 18px;
 }
 
+%gv-mix-small {
+  font-family: AvenirNext-regular;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+%gv-mix-small-bold {
+  font-family: AvenirNext-demiBold;
+  font-size: 12px;
+  line-height: 14px;
+  color: $grey-medium;
+}
+
+%gv-mix-xs {
+  font-family: AvenirNext-regular;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+%gv-mix-xsBold {
+  font-family: AvenirNext-demiBold;
+  font-size: 10px;
+}
+
 %gv-mix-bodyBold {
   font-size: 14px;
   font-family: AvenirNext-demiBold;
   line-height: 18px;
+}
+
+%gv-mix-button {
+  font-size: 14px;
+  font-family: AvenirNext-Bold;
+  line-height: 18px;
+  text-align: center;
+  color: $white;
 }
 
 

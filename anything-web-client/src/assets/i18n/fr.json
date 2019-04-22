@@ -2,5 +2,10 @@
   "title": "AnythingWeb",
   "home": "AnythingWeb",
   "login": "Se connecter",
-  "register": "Créer un nouveau compte"
+  "register": "Créer un nouveau compte",
+  "login_to_continue": "Connectez-vous pour continuer",
+  "inform_username": "Nom",
+  "inform_password": "Mot de passe",
+  "username_error": "Veuillez indiquer votre nom d'utilisateur",
+  "password_error": "Veuillez indiquer votre mot de passe"
 }
