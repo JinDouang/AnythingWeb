@@ -11,6 +11,10 @@ body {
   @extend %gv-mix-title1;
 }
 
+.glob-font-body-bold {
+  @extend %gv-mix-bodyBold;
+}
+
 /* ----------------------------
     Form
 ---------------------------- */

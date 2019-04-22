@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup} from '@angular/forms';
 
 @Component({
@@ -6,7 +6,7 @@ import {FormBuilder, FormGroup} from '@angular/forms';
   templateUrl: './component-search-bar.component.html',
   styleUrls: ['./component-search-bar.component.scss'],
 })
-export class ComponentSearchBarComponent {
+export class ComponentSearchBarComponent implements OnInit{
   public searchForm: FormGroup;
 
   constructor(private formBuilder: FormBuilder) {
