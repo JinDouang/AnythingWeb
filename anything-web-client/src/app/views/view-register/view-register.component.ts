@@ -20,7 +20,10 @@ export class ViewRegisterComponent implements OnInit {
   ngOnInit() {
     this.form = this.fb.group({
       userName: ['', Validators.required],
-      password: ['', Validators.required]
+      email: ['', [Validators.email, Validators.required]],
+      password: ['', Validators.required],
+      confirmPassword: ['', Validators.required]
+
     });
   }
 
@@ -32,7 +35,6 @@ export class ViewRegisterComponent implements OnInit {
     if (this.form.valid) {
       this.isSubmitted = true;
       console.log(this.form);
-      // this.authService.login(this.form.value);
     }
     this.isSubmitted = false;
   }

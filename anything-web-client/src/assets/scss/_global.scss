@@ -7,3 +7,10 @@
 body {
   min-width: 768px;
 }
+
+@include mobile {
+  body {
+    width: 100%;
+    min-width: 0;
+  }
+}

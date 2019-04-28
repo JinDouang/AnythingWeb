@@ -4,8 +4,15 @@
   "login": "Se connecter",
   "register": "Créer un nouveau compte",
   "login_to_continue": "Connectez-vous pour continuer",
+  "create_account": "Créer votre compte",
+  "create_my_account": "Créer mon compte",
   "inform_username": "Nom",
+  "inform_email": "Email",
   "inform_password": "Mot de passe",
+  "confirm_password": "Confirmez votre mot de passe",
+  "email_error": "Veuillez indiquer votre adresse mail",
   "username_error": "Veuillez indiquer votre nom d'utilisateur",
-  "password_error": "Veuillez indiquer votre mot de passe"
+  "password_error": "Veuillez indiquer votre mot de passe",
+  "password_confirm_error": "Veuillez confirmer correctement votre mot de passe"
+
 }
