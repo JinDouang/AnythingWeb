@@ -5,12 +5,21 @@
         <form [formGroup]="form" (ngSubmit)="onSubmit()">
           <span class="glob-font-subtitle view-register-card-title">{{'create_account' | translate}}</span>
 
-          <!--Name-->
+          <!--firstName-->
           <mat-form-field class="view-register-card-field" appearance="outline">
-            <mat-label>{{'inform_username' | translate}}</mat-label>
-            <input matInput [placeholder]="'inform_username' | translate" formControlName="userName" required>
-            <mat-error *ngIf="isFieldInvalid('userName') || form.controls.userName.hasError(userName)">
-              {{'username_error' | translate}}
+            <mat-label>{{'inform_firstName' | translate}}</mat-label>
+            <input matInput [placeholder]="'inform_firstName' | translate" formControlName="firstName" required>
+            <mat-error *ngIf="isFieldInvalid('firstName') || form.controls.firstName.hasError(firstName)">
+              {{'username_firstName' | translate}}
+            </mat-error>
+          </mat-form-field>
+
+          <!--lastName-->
+          <mat-form-field class="view-register-card-field" appearance="outline">
+            <mat-label>{{'inform_lastName' | translate}}</mat-label>
+            <input matInput [placeholder]="'inform_lastName' | translate" formControlName="lastName" required>
+            <mat-error *ngIf="isFieldInvalid('lastName') || form.controls.lastName.hasError(lastName)">
+              {{'username_lastName' | translate}}
             </mat-error>
           </mat-form-field>
 
@@ -36,7 +45,7 @@
           <mat-form-field class="view-register-card-fieldEnd" appearance="outline">
             <mat-label>{{'confirm_password' | translate}}</mat-label>
             <input matInput type="password" [placeholder]="'confirm_password' | translate" formControlName="confirmPassword" required>
-            <mat-error *ngIf="isFieldInvalid('confirmPassword') || form.controls.confirmPassword.hasError(confirmPassword)">
+            <mat-error *ngIf="form.hasError('passwordsDoNotMatch') || isFieldInvalid('confirmPassword')">
               {{'password_confirm_error' | translate}}
             </mat-error>
           </mat-form-field>

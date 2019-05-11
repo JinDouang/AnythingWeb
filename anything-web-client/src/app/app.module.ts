@@ -8,6 +8,7 @@ import {AuthenticationService} from './services/authentication/authentication.se
 import {HttpClientModule} from '@angular/common/http';
 import {TranslateService} from './services/Translate/translate.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {RegisterService} from './services/register/register.service';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
   providers: [
     AuthenticationService,
     TranslateService,
+    RegisterService,
     /* APP_INITIALIZER that allows to initialize and configure our providers before the application starts. */
     {
       provide: APP_INITIALIZER,
