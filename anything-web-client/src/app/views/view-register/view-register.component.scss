@@ -1,5 +1,11 @@
 @import '../../../assets/scss/mixins';
 
+.glob-grid-simpleCol {
+  @include mobile {
+    padding: 0;
+  }
+}
+
 .view-register {
   width: 300px;
   display: flex;
@@ -7,6 +13,10 @@
   align-items: center;
   &-card {
     width: 100%;
+    @include mobile {
+      padding: 0;
+      box-shadow: none;
+    }
     &-title {
       text-align: center;
       padding: $spacing-M 0;

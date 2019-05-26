@@ -1,8 +1,13 @@
 @import '../../../assets/scss/mixins';
 
 .comp-menuButton {
-  display: flex;
-  justify-content: flex-end;
-  flex: 1;
-  padding-right: $spacing-M;
+  &-desktop {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    padding-right: $spacing-M;
+  }
+  &-mobile {
+
+  }
 }

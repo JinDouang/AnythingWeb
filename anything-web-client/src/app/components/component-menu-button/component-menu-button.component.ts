@@ -9,4 +9,8 @@ import {RoutingKeys} from '../../core/routing/routing-keys';
 export class ComponentMenuButtonComponent {
   public readonly routingKeys = RoutingKeys;
 
+  public isMobile(): boolean {
+    // is windows screen lesser than 768px
+    return window.screen.width < 768;
+  }
 }

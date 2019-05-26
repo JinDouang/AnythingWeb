@@ -9,12 +9,8 @@
 .glob-layout {
   display: grid;
   min-height: 100vh;
-  grid-template-areas:
-    'global-navbar'
-    'global-content';
-  grid-template-rows:
-    minmax(60px, min-content)
-    1fr;
+  grid-template-areas: 'global-navbar' 'global-content';
+  grid-template-rows: minmax(60px, min-content) 1fr;
 
   &-navbar {
     grid-area: global-navbar;
@@ -48,5 +44,11 @@
   }
   &-right {
     grid-area: profile-right;
+  }
+}
+
+@include mobile {
+  .glob-layout {
+    display: contents;
   }
 }
