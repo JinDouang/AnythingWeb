@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs/index';
+import {RegisterRequest} from '../../models/register/RegisterRequest';
 
 @Injectable()
 export class RegisterService {
@@ -27,14 +28,12 @@ export class RegisterService {
     email: string,
     password: string
   ): Observable<void> {
-    const formData: FormData = new FormData();
-
-    formData.append('password', password);
-    formData.append('first_name', firstName);
-    formData.append('last_name', lastName);
-    formData.append('email', email);
-
-    return this.http.post<void>('/user/auth/local/register', formData);
+    const registerRequest: RegisterRequest = new RegisterRequest();
+    registerRequest.firstName = firstName;
+    registerRequest.lastName = lastName;
+    registerRequest.email = email;
+    registerRequest.password = password;
+    return this.http.post<void>('/api/register', registerRequest);
   }
 
 }

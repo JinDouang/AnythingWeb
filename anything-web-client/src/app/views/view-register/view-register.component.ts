@@ -47,7 +47,6 @@ export class ViewRegisterComponent implements OnInit, OnDestroy {
   onSubmit() {
     if (this.form.valid) {
       this.isSubmitted = true;
-      console.log(this.form);
       const values = this.form.value;
 
       this.registerService
