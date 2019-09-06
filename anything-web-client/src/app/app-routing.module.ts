@@ -5,18 +5,18 @@ import {RoutingKeys} from './core/routing/routing-keys';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: './views/view-home/view-home.module#ViewHomeModule'
+    loadChildren: () => import('./views/view-home/view-home.module').then(m => m.ViewHomeModule)
   },
   {
     path: RoutingKeys.register,
-    loadChildren: './views/view-register/view-register.module#ViewRegisterModule',
+    loadChildren: () => import('./views/view-register/view-register.module').then(m => m.ViewRegisterModule),
     data: {
       title: 'register',
     },
   },
   {
     path: RoutingKeys.authentication,
-    loadChildren: './views/view-authentication/view-authentication.module#ViewAuthenticationModule',
+    loadChildren: () => import('./views/view-authentication/view-authentication.module').then(m => m.ViewAuthenticationModule),
     data: {
       title: 'authentication',
     },

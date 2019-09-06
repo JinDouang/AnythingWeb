@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "target": "es2015",
     "lib": ["es5", "es6", "dom"],
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "node",
     "noEmitHelpers": false,
     "emitDecoratorMetadata": true,
