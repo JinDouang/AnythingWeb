@@ -1,13 +1,13 @@
-<div class="comp-menuButton glob-font-body-bold">
+<div class="menuButton glob-font-body-bold">
 
   <!--desktop part-->
-  <div class="comp-menuButton-desktop" *ngIf="!isMobile()">
+  <div class="menuButton-desktop" *ngIf="!isMobile()">
     <button class="primary" routerLink="/{{ routingKeys.authentication }}">{{ 'login' | translate }}</button>
     <button class="primary" routerLink="/{{ routingKeys.register }}">{{ 'register' | translate }}</button>
   </div>
 
   <!--mobile part-->
-  <button mat-button class="comp-menuButton-mobile" mat-raised-button color="primary"
+  <button mat-button class="menuButton-mobile" mat-raised-button color="primary"
           *ngIf="isMobile()" [matMenuTriggerFor]="menu">Menu</button>
   <mat-menu #menu="matMenu">
     <button mat-menu-item>

@@ -3,7 +3,7 @@ import {APP_INITIALIZER, NgModule} from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {ComponentNavbarModule} from './components/component-nav-bar/component-navbar.module';
+import {NavbarModule} from './ux/nav-bar/navbar.module';
 import {AuthenticationService} from './services/authentication/authentication.service';
 import {HttpClientModule} from '@angular/common/http';
 import {TranslateService} from './services/Translate/translate.service';
@@ -19,7 +19,7 @@ import {RegisterService} from './services/register/register.service';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    ComponentNavbarModule,
+    NavbarModule,
   ],
   providers: [
     AuthenticationService,

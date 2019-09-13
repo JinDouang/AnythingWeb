@@ -6,7 +6,7 @@ import {
   MODULE_PROVIDERS,
   MODULE_SCHEMAS,
   MODULE_ENTRYCOMPONENTS
-} from './component-search-bar.configuration';
+} from './menu-button.configuration';
 
 @NgModule({
   providers: MODULE_PROVIDERS,
@@ -16,5 +16,5 @@ import {
   schemas: MODULE_SCHEMAS,
   entryComponents: MODULE_ENTRYCOMPONENTS
 })
-export class ComponentSearchBarModule {
+export class MenuButtonModule {
 }

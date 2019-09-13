@@ -2,11 +2,11 @@ import {Component} from '@angular/core';
 import {RoutingKeys} from '../../core/routing/routing-keys';
 
 @Component({
-  selector: 'component-menu-button',
-  templateUrl: './component-menu-button.component.html',
-  styleUrls: ['./component-menu-button.component.scss'],
+  selector: 'menu-button',
+  templateUrl: './menu-button.component.html',
+  styleUrls: ['./menu-button.component.scss'],
 })
-export class ComponentMenuButtonComponent {
+export class MenuButtonComponent {
   public readonly routingKeys = RoutingKeys;
 
   public isMobile(): boolean {

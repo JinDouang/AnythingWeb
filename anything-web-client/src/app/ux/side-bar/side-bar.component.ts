@@ -1,11 +1,11 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
-  selector: 'component-side-bar',
-  templateUrl: './component-side-bar.component.html',
-  styleUrls: ['./component-side-bar.component.scss'],
+  selector: 'side-bar',
+  templateUrl: './side-bar.component.html',
+  styleUrls: ['./side-bar.component.scss'],
 })
-export class ComponentSideBarComponent {
+export class SideBarComponent {
   @Input() public isSideBarActive: boolean;
   @Input() public data: any;
   @Output() public onChangeSideBar$ = new EventEmitter<boolean>();

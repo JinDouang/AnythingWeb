@@ -6,7 +6,7 @@ import {
   MODULE_PROVIDERS,
   MODULE_SCHEMAS,
   MODULE_ENTRYCOMPONENTS
-} from './component-navbar.configuration';
+} from './search-bar.configuration';
 
 @NgModule({
   providers: MODULE_PROVIDERS,
@@ -16,5 +16,5 @@ import {
   schemas: MODULE_SCHEMAS,
   entryComponents: MODULE_ENTRYCOMPONENTS
 })
-export class ComponentNavbarModule {
+export class SearchBarModule {
 }
