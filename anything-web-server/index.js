@@ -25,7 +25,7 @@ routes(app);
 mongoose.connect(configMongo.url, { useNewUrlParser: true }, (err, db) => {
     if (err) throw err;
     // print database name
-    console.log("db object points to the database : " + db.databaseName);
+    console.log("db object points to the database : " + db.name);
     // after completing all the operations with db, close it.
     // db.close();
 });
