@@ -6,7 +6,8 @@
           <span class="glob-font-subtitle view-authenticate-card-title">{{'login_to_continue' | translate}}</span>
 
           <!--Login-->
-          <mat-form-field class="view-authenticate-card-field">
+          <mat-form-field class="view-authenticate-card-field" appearance="outline">
+            <mat-label>{{'inform_username' | translate}}</mat-label>
             <input matInput [placeholder]="'inform_username' | translate" formControlName="userName" required>
             <mat-error *ngIf="isFieldInvalid('userName')">
               {{'username_error' | translate}}
@@ -14,9 +15,10 @@
           </mat-form-field>
 
           <!--Password-->
-          <mat-form-field class="view-authenticate-card-fieldEnd">
+          <mat-form-field class="view-authenticate-card-field" appearance="outline">
+            <mat-label>{{'inform_password' | translate}}</mat-label>
             <input matInput type="password" [placeholder]="'inform_password' | translate" formControlName="password" required>
-            <mat-error *ngIf="isFieldInvalid('userName')">
+            <mat-error *ngIf="isFieldInvalid('password') || form.controls.password.hasError(password)">
               {{'password_error' | translate}}
             </mat-error>
           </mat-form-field>
