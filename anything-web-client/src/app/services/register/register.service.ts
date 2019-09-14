@@ -33,7 +33,7 @@ export class RegisterService {
     registerRequest.lastName = lastName;
     registerRequest.email = email;
     registerRequest.password = password;
-    return this.http.post<void>('/api/register', registerRequest);
+    return this.http.post<void>('register', registerRequest);
   }
 
 }

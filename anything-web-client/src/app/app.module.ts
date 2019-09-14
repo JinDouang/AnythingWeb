@@ -9,6 +9,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {TranslateService} from './services/Translate/translate.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {RegisterService} from './services/register/register.service';
+import {TransferHttpModule} from './core/interceptors/http/transfert-http-module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import {RegisterService} from './services/register/register.service';
     BrowserAnimationsModule,
     HttpClientModule,
     NavbarModule,
+    TransferHttpModule
   ],
   providers: [
     AuthenticationService,
